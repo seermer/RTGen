@@ -60,6 +60,10 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu11
 
 Follow the instructions in [INSTALLATION.md](INSTALLATION.md)
 
+5. Data preparation
+
+Floow the instructions in [DATA.md](DATA.md)
+
 ## Training
 ```sh
 bash tools/dist_train.sh configs/rtgen/ovcoco/detic_coco_cc3m2.8m_blipregionV2_btsz23232_captwigt1_gen_soft.py 8 --work-dir path/to/coco_r50_train
