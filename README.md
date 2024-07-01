@@ -82,13 +82,13 @@ bash tools/dist_test.sh configs/rtgen/ovlvis/test_ovlvis_r50.py checkpoints/rtge
 ### COCO
 | Model | backbone  | supervision | APnovel   | APbase | AP |   model | cfg |
 |-----|---------|-------|------|------|------|------|--------|
-|Faster-RCNN |R50 | RTGen | 33.6 |   51.7  |   46.9  | [ckpt](https://drive.google.com/file/d/1VJDU8aZ6pZU4VcxCMaWeGWD6paAsqHLl/view?usp=drive_link) |[cfg](configs/xxx.py)|
+|Faster-RCNN |R50 | RTGen | 33.6 |   51.7  |   46.9  | [ckpt](https://drive.google.com/file/d/1VJDU8aZ6pZU4VcxCMaWeGWD6paAsqHLl/view?usp=drive_link) |[cfg](configs/rtgen/ovcoco/test_ovcoco_r50.py)|
 
 ### LVIS
 | Model | backbone  | supervision | APnovel   | APc | APf |  AP |   model | cfg |
 |-----|---------|-------|------|------|------|------|--------|------|
-|CenterNet |R50 | RTGen | 23.9 |  28.5  |  31.8 |  29.0  | [ckpt](https://drive.google.com/file/d/1AbjFoMLL1ffn6Bqka9NaZeA3nvC0cq-I/view?usp=drive_link) |[cfg](configs/xxx.py)|
-|CenterNet |Swin-B| RTGen | 30.2 | 39.9 | 41.3  | 38.8 | [ckpt](https://drive.google.com/file/d/1alJNY8eJy-E7mURJDj5LZFHNZ6SG88CF/view?usp=share_link) | [cfg](configs/xxx.py) |
+|CenterNet |R50 | RTGen | 23.9 |  28.5  |  31.8 |  29.0  | [ckpt](https://drive.google.com/file/d/1AbjFoMLL1ffn6Bqka9NaZeA3nvC0cq-I/view?usp=drive_link) |[cfg](configs/rtgen/ovlvis/test_ovlvis_r50.py)|
+|CenterNet |Swin-B| RTGen | 30.2 | 39.9 | 41.3  | 38.8 | [ckpt](https://drive.google.com/file/d/1alJNY8eJy-E7mURJDj5LZFHNZ6SG88CF/view?usp=share_link) | [cfg](configs/rtgen/ovlvis/test_ovlvis_swinb.py) |
 
 ## ✏️ Citation
 If you find this work useful, please use the following entry to cite us:
