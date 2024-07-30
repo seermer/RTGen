@@ -56,7 +56,7 @@ generated_image_pipeline = [
 det_dataset = dict(
     type='CocoDataset',
     data_root=data_root,
-    ann_file='wusize/instances_train2017_base.json',
+    ann_file='ov/instances_train2017_base.json',
     data_prefix=dict(img='train2017/'),
     filter_cfg=dict(filter_empty_gt=True, min_size=32),
     pipeline=det_pipeline)
@@ -71,7 +71,7 @@ generated_caption_dataset = dict(
 
 generated_image_dataset = dict(
     type='GeneratedImageDataset',
-    ann_file='/media/Bootes/fangyic/ramdisk/cleaned_inpainting_box_text_1M+/media/Bootes/fangyic/ramdisk/generation_samples/inpainting_box_text',
+    ann_file='data/cc3m/annotations/cleaned_inpainting_box_text_1M+data/generation_samples/inpainting_box_text',
     filter_cfg=dict(filter_empty_gt=False),
     pipeline=generated_image_pipeline
 )
@@ -94,13 +94,13 @@ train_dataloader = dict(
 val_evaluator = [
     dict(
         type='CocoMetric',
-        ann_file=data_root + 'wusize/instances_val2017_base.json',
+        ann_file=data_root + 'ov/instances_val2017_base.json',
         metric='bbox',
         prefix='Base',
         format_only=False),
     dict(
         type='CocoMetric',
-        ann_file=data_root + 'wusize/instances_val2017_novel.json',
+        ann_file=data_root + 'ov/instances_val2017_novel.json',
         metric='bbox',
         prefix='Novel',
         format_only=False)

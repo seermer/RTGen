@@ -80,13 +80,13 @@ test_cfg = dict(type='TestLoop')
 val_evaluator = [
     dict(
         type='CocoMetric',
-        ann_file=data_root + 'wusize/instances_val2017_base.json',
+        ann_file=data_root + 'ov/instances_val2017_base.json',
         metric='bbox',
         prefix='Base',
         format_only=False),
     dict(
         type='CocoMetric',
-        ann_file=data_root + 'wusize/instances_val2017_novel.json',
+        ann_file=data_root + 'ov/instances_val2017_novel.json',
         metric='bbox',
         prefix='Novel',
         format_only=False)
